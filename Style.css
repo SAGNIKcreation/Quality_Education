@@ -1,0 +1,289 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #f8f9fa; padding: 20px 10px; 
+}
+.navbar-brand {
+    font-size: 1.75rem; font-weight: bold; 
+}
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.25rem; padding: 10px 20px; color: #333;
+}
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    font-size: 1.1rem; padding: 10px 20px; color: #333;
+}
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: #e9ecef; 
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler-icon {
+    width: 1.5em; height: 1.5em;
+}
+header {
+    position: -webkit-sticky; position: sticky; top: 0; z-index: 1000; width: 100%;
+}
+
+/* Button Design */
+.btn {
+    display: inline-block; padding: 10px 20px; font-size: 1rem; color: #fff; background-color: #007bff; border: none; border-radius: 5px; text-align: center; text-decoration: none; transition: background-color 0.3s, transform 0.3s; margin-bottom: 15px;
+}
+
+.btn:hover {
+    background-color: #0056b3; transform: scale(1.05);
+}
+
+
+/* HOME Section */
+.home {
+    position: relative; overflow: hidden; height: 100vh;
+}
+.carousel-item img {
+    width: 100vw; height: 91vh; object-fit: cover;
+}
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; height: 100%; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0); border: none; z-index: 1000;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-image: none; color: #fff; font-size: 2rem; 
+}
+.carousel-control-prev, .carousel-control-next {
+    margin-top: 20%;
+}
+@media (max-width: 768px) { /*Responsive Design */
+    .carousel-control-prev, .carousel-control-next {
+        margin-top: 60%;
+    }
+}
+
+
+/* ABOUT Section */
+.about {
+    padding: 40px 20px; background-color: #e6f9e6; text-align: center; 
+}
+.about h1 {
+    margin-bottom: 30px;
+}
+.card-container {
+    display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; 
+}
+.card {
+    width: 18rem; background: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; position: relative;
+}
+.card:nth-child(odd) {
+    transform: translateY(-10px);
+}
+.card:nth-child(even) {
+    transform: translateY(10px);
+}
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.card-img-top {
+    height: 200px; object-fit: cover;
+}
+
+
+/* General Rights Section */
+.general-rights {
+    padding: 40px 20px; background-color: #f0f8ff; text-align: center;
+}
+.general-rights h1 {
+    margin-bottom: 30px;
+}
+.grid-container {
+    display: flex; flex-wrap: nowrap; gap: 20px; justify-content: center; padding: 0 10px;
+}
+.grid-item {
+    flex: 0 0 auto; width: 20rem; background: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; position: relative;
+}
+.grid-item:hover {
+    transform: scale(1.05); box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.grid-item img {
+    width: 100%; height: auto; object-fit: cover;
+}
+.grid-item h3 {
+    margin-top: 10px; font-size: 1.2em;
+}
+.grid-item p {
+    margin: 10px 0;
+}
+.big-card {
+    width: 24rem;
+}
+.left-card {
+    transform: translateY(-10px);
+}
+.right-card {
+    transform: translateY(10px);
+}
+@media (max-width: 768px) { /* Responsive Design for Mobile */
+    .grid-container {
+        flex-direction: row;
+    }
+    .grid-item {
+        width: 100%; margin: 0;
+    }
+    .big-card {
+        width: 100%;
+    }
+}
+
+
+/* CURRENT CIRCUMSTANCE Section */
+.current-circumstances {
+    padding: 40px 20px; background-color: #f0f8ff; text-align: center;
+}
+.current-circumstances h1 {
+    margin-bottom: 30px;
+}
+.grid-container {
+    display: flex; flex-wrap: nowrap; gap: 20px; justify-content: center; padding: 0 10px;
+}
+.grid-item {
+    flex: 0 0 auto; background: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; position: relative;
+}
+.grid-item img {
+    width: 100%; height: auto; object-fit: cover;
+}
+.grid-item h2 {
+    margin-top: 10px; font-size: 1.2em;
+}
+.grid-item p {
+    margin: 10px 0;
+}
+.left-card {
+    width: 24rem; transform: translateY(-10px);
+}
+.middle-card {
+    width: 20rem; transform: translateY(10px);
+}
+.right-card {
+    width: 20rem; transform: translateY(10px);
+}
+.grid-item:hover {
+    transform: translateY(-15px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.left-card:hover {
+    transform: translateY(-20px);
+}
+@media (max-width: 768px) { /* Responsive Design for Mobile */
+    .grid-container {
+        flex-direction: column; align-items: center;
+    }
+    .grid-item {
+        width: 100%; margin: 0;
+    }
+}
+
+
+/* TESTIMONIALS Section */
+.testimonials {
+    padding: 40px 20px; background: #fff8e1;
+}
+.testimonials h1 {
+    text-align: center; margin-bottom: 40px; font-size: 2em;
+}
+.grid-container {
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;
+}
+.grid-item {
+    flex: 1; padding: 0px; background: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;
+}
+.grid-item img {
+    width: 100%; height: 300px; object-fit: cover;
+}
+.grid-item h3 {
+    margin: 15px 0;
+}
+.grid-item p {
+    font-size: 0.9em;
+}
+
+
+/* OTHER PROSPECTS Section */
+.other-prospects {
+    padding: 40px 20px; background-color: #e6f9e6; text-align: center;
+}
+.other-prospects h1 {
+    margin-bottom: 30px;
+}
+.grid-container {
+    display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: 20px; padding: 0 10px;
+}
+.grid-item {
+    flex: 1 1 20rem; background: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s; position: relative;
+}
+.grid-item img {
+    width: 100%; height: 300px; object-fit: cover;
+}
+.grid-item h3 {
+    margin-top: 10px; font-size: 1.2em; 
+}
+.grid-item p {
+    margin: 10px 0;
+}
+.grid-item a {
+    margin-top: 20px; display: inline-block;
+}
+.left-card {
+    transform: translateY(10px);
+}
+.middle-card {
+    transform: translateY(-10px);
+}
+.right-card {
+    transform: translateY(10px);
+}
+.grid-item:hover {
+    transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* TEAM DETAILS Section */
+.team-details {
+    padding: 40px 20px; background: #fce4ec;
+}
+.team-details h1 {
+    text-align: center; margin-bottom: 40px; font-size: 2em;
+}
+.team-container {
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;
+}
+.team-member {
+    flex: 1; padding: 2px; background: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); transition: transform 0.3s, box-shadow 0.3s;
+}
+.team-member img {
+    width: 100%; height: 300px; object-fit: cover;
+}
+.team-member h3 { 
+    margin: 15px 0;
+}
+.team-member p {
+    font-size: 0.9em;
+}
+.team-member:hover {
+    transform: scale(1.05); box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* FOOTER Section */
+footer {
+    background-color: #f1f1f1; padding: 20px; text-align: center; color: #333; border-top: 2px solid #ddd;
+}
+.footer-content {
+    max-width: 1200px; margin: 0 auto;
+}
+.footer-content p {
+    margin: 10px 0; font-size: 1rem;
+}
+@media (max-width: 768px) { /* Responsive Design for Footer */
+    footer {
+        padding: 15px;
+    }
+    .footer-content p {
+        font-size: 0.9rem;
+    }
+}
